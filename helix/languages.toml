@@ -1,0 +1,110 @@
+# --------------------
+# Go
+# --------------------
+
+[language-server.gopls]
+command = "gopls"
+
+[[language]]
+name = "go"
+auto-format = true
+language-servers = ["gopls"]
+formatter = { command = "gofmt" }
+
+# --------------------
+# Rust
+# --------------------
+
+[language-server.rust-analyzer]
+command = "rust-analyzer"
+
+[language-server.rust-analyzer.config.check]
+command = "clippy"
+
+[[language]]
+name = "rust"
+auto-format = true
+language-servers = ["rust-analyzer"]
+formatter = { command = "rustfmt" }
+
+# --------------------
+# Python
+# Вариант: pyright + ruff
+# pyright = LSP / типы / autocomplete
+# ruff = lint / format
+# --------------------
+
+[language-server.pyright]
+command = "pyright-langserver"
+args = ["--stdio"]
+
+[language-server.ruff]
+command = "ruff"
+args = ["server"]
+
+[[language]]
+name = "python"
+auto-format = true
+language-servers = ["pyright", "ruff"]
+formatter = { command = "ruff", args = ["format", "-"] }
+
+# --------------------
+# HTML
+# --------------------
+
+[language-server.vscode-html-language-server]
+command = "vscode-html-language-server"
+args = ["--stdio"]
+
+[language-server.emmet-lsp]
+command = "emmet-language-server"
+args = ["--stdio"]
+
+[[language]]
+name = "html"
+auto-format = true
+language-servers = ["vscode-html-language-server", "emmet-lsp"]
+formatter = { command = "prettier", args = ["--parser", "html"] }
+indent = { tab-width = 2, unit = "  " }
+
+# --------------------
+# CSS
+# --------------------
+
+[language-server.vscode-css-language-server]
+command = "vscode-css-language-server"
+args = ["--stdio"]
+
+[[language]]
+name = "css"
+auto-format = true
+language-servers = ["vscode-css-language-server"]
+formatter = { command = "prettier", args = ["--parser", "css"] }
+indent = { tab-width = 2, unit = "  " }
+
+# --------------------
+# JavaScript
+# --------------------
+
+[language-server.biome]
+command = "biome"
+args = ["lsp-proxy"]
+
+[language-server.typescript-language-server]
+command = "typescript-language-server"
+args = ["--stdio"]
+
+[language-server.typescript-language-server.config]
+hostInfo = "helix"
+
+[language-server.typescript-language-server.config.tsserver]
+path = 'C:\Users\Roman\scoop\persist\nodejs\bin\node_modules\typescript\lib\tsserver.js'
+
+[[language]]
+name = "javascript"
+auto-format = true
+language-servers = [
+    { name = "typescript-language-server", except-features = ["format"] },
+      "biome"
+]
+indent = { tab-width = 2, unit = "  " }
