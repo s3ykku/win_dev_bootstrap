@@ -1,179 +1,170 @@
 {
-    "$help": "https://aka.ms/terminal-documentation",
-    "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": [],
-    "copyFormatting": "none",
-    "copyOnSelect": false,
-    "defaultProfile": "{47302f9c-1ac4-566c-aa3e-8cf29889d6ab}",
-    "keybindings": 
-    [
-        {
-            "id": "Terminal.CopyToClipboard",
-            "keys": "ctrl+c"
-        },
-        {
-            "id": "Terminal.FindText",
-            "keys": "ctrl+shift+f"
-        },
-        {
-            "id": "Terminal.PasteFromClipboard",
-            "keys": "ctrl+v"
-        },
-        {
-            "id": "Terminal.DuplicatePaneAuto",
-            "keys": "alt+shift+d"
-        }
-    ],
-    "launchMode": "maximized",
-    "newTabMenu": 
-    [
-        {
-            "type": "remainingProfiles"
-        }
-    ],
-    "profiles": 
+  "$help": "https://aka.ms/terminal-documentation",
+  "$schema": "https://aka.ms/terminal-profiles-schema",
+  "actions": [],
+  "copyFormatting": "none",
+  "copyOnSelect": false,
+  "defaultProfile": "{47302f9c-1ac4-566c-aa3e-8cf29889d6ab}",
+  "keybindings": [
     {
-        "defaults": {},
-        "list": 
-        [
-            {
-                "colorScheme": "kanagawabones",
-                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-                "cursorShape": "filledBox",
-                "font": 
-                {
-                    "cellHeight": "1.25",
-                    "face": "MonaspiceNe Nerd Font",
-                    "size": 12,
-                    "weight": "medium"
-                },
-                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-                "hidden": false,
-                "name": "Windows PowerShell",
-                "padding": "0",
-                "startingDirectory": null
-            },
-            {
-                "commandline": "%SystemRoot%\\System32\\cmd.exe",
-                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-                "hidden": false,
-                "name": "\u041a\u043e\u043c\u0430\u043d\u0434\u043d\u0430\u044f \u0441\u0442\u0440\u043e\u043a\u0430"
-            },
-            {
-                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-                "hidden": false,
-                "name": "Azure Cloud Shell",
-                "source": "Windows.Terminal.Azure"
-            },
-            {
-                "antialiasingMode": "cleartype",
-                "colorScheme": "kanagawabones",
-                "commandline": "\"C:\\Program Files\\PowerShell\\7\\pwsh.exe\"",
-                "cursorShape": "filledBox",
-                "font": 
-                {
-                    "cellHeight": "1.33",
-                    "face": "MonaspiceNe Nerd Font",
-                    "size": 12,
-                    "weight": "medium"
-                },
-                "guid": "{ad03e0bc-899b-47e3-aa82-64f9f3b15cdb}",
-                "hidden": false,
-                "icon": "ms-appx:///ProfileIcons/pwsh.png",
-                "name": "PowerShell",
-                "padding": "0",
-                "scrollbarState": "hidden",
-                "startingDirectory": "%USERPROFILE%"
-            },
-            {
-                "antialiasingMode": "cleartype",
-                "backgroundImage": null,
-                "colorScheme": "kanagawabones",
-                "cursorShape": "underscore",
-                "font": 
-                {
-                    "builtinGlyphs": true,
-                    "cellHeight": "1.25",
-                    "cellWidth": "0.6",
-                    "face": "MonaspiceNe Nerd Font",
-                    "features": 
-                    {
-                        "calt": 1,
-                        "liga": 1,
-                        "ss01": 1,
-                        "ss02": 1,
-                        "ss03": 1,
-                        "ss04": 1,
-                        "ss05": 1,
-                        "ss06": 1,
-                        "ss07": 1,
-                        "ss08": 1,
-                        "ss09": 1,
-                        "ss10": 1
-                    },
-                    "size": 12,
-                    "weight": "normal"
-                },
-                "guid": "{47302f9c-1ac4-566c-aa3e-8cf29889d6ab}",
-                "hidden": false,
-                "name": "Nushell",
-                "opacity": 100,
-                "padding": "0",
-                "scrollbarState": "hidden",
-                "source": "nu",
-                "useAcrylic": false
-            }
-        ]
+      "id": "Terminal.CopyToClipboard",
+      "keys": "ctrl+shift+c"
     },
-    "schemes": 
-    [
-        {
-            "background": "#1F1F28",
-            "black": "#1F1F28",
-            "blue": "#7EB3C9",
-            "brightBlack": "#3C3C51",
-            "brightBlue": "#7BC2DF",
-            "brightCyan": "#7BC2DF",
-            "brightGreen": "#9EC967",
-            "brightPurple": "#A98FD2",
-            "brightRed": "#EC818C",
-            "brightWhite": "#A8A48D",
-            "brightYellow": "#F1C982",
-            "cursorColor": "#E6E0C2",
-            "cyan": "#7EB3C9",
-            "foreground": "#DDD8BB",
-            "green": "#98BC6D",
-            "name": "kanagawabones",
-            "purple": "#957FB8",
-            "red": "#E46A78",
-            "selectionBackground": "#49473E",
-            "white": "#DDD8BB",
-            "yellow": "#E5C283"
+    {
+      "id": "Terminal.FindText",
+      "keys": "ctrl+shift+f"
+    },
+    {
+      "id": "Terminal.PasteFromClipboard",
+      "keys": "ctrl+shift+v"
+    },
+    {
+      "id": "Terminal.DuplicatePaneAuto",
+      "keys": "alt+shift+d"
+    }
+  ],
+  "launchMode": "maximized",
+  "newTabMenu": [
+    {
+      "type": "remainingProfiles"
+    }
+  ],
+  "profiles": {
+    "defaults": {},
+    "list": [
+      {
+        "colorScheme": "kanagawabones",
+        "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "cursorShape": "filledBox",
+        "font": {
+          "cellHeight": "1.25",
+          "face": "MonaspiceNe Nerd Font",
+          "size": 12,
+          "weight": "medium"
         },
-        {
-            "background": "#24283B",
-            "black": "#1D202F",
-            "blue": "#7AA2F7",
-            "brightBlack": "#414868",
-            "brightBlue": "#7AA2F7",
-            "brightCyan": "#7DCFFF",
-            "brightGreen": "#9ECE6A",
-            "brightPurple": "#BB9AF7",
-            "brightRed": "#F7768E",
-            "brightWhite": "#C0CAF5",
-            "brightYellow": "#E0AF68",
-            "cursorColor": "#C0CAF5",
-            "cyan": "#7DCFFF",
-            "foreground": "#C0CAF5",
-            "green": "#9ECE6A",
-            "name": "tokyonight-storm",
-            "purple": "#BB9AF7",
-            "red": "#F7768E",
-            "selectionBackground": "#364A82",
-            "white": "#A9B1D6",
-            "yellow": "#E0AF68"
-        }
-    ],
-    "themes": [],
-    "warning.confirmCloseAllTabs": false
+        "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+        "hidden": false,
+        "name": "Windows PowerShell",
+        "padding": "0",
+        "startingDirectory": null
+      },
+      {
+        "commandline": "%SystemRoot%\\System32\\cmd.exe",
+        "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+        "hidden": false,
+        "name": "\u041a\u043e\u043c\u0430\u043d\u0434\u043d\u0430\u044f \u0441\u0442\u0440\u043e\u043a\u0430"
+      },
+      {
+        "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+        "hidden": false,
+        "name": "Azure Cloud Shell",
+        "source": "Windows.Terminal.Azure"
+      },
+      {
+        "antialiasingMode": "cleartype",
+        "colorScheme": "kanagawabones",
+        "commandline": "\"C:\\Program Files\\PowerShell\\7\\pwsh.exe\"",
+        "cursorShape": "filledBox",
+        "font": {
+          "cellHeight": "1.33",
+          "face": "MonaspiceNe Nerd Font",
+          "size": 12,
+          "weight": "medium"
+        },
+        "guid": "{ad03e0bc-899b-47e3-aa82-64f9f3b15cdb}",
+        "hidden": false,
+        "icon": "ms-appx:///ProfileIcons/pwsh.png",
+        "name": "PowerShell",
+        "padding": "0",
+        "scrollbarState": "hidden",
+        "startingDirectory": "%USERPROFILE%"
+      },
+      {
+        "antialiasingMode": "cleartype",
+        "backgroundImage": null,
+        "colorScheme": "kanagawabones",
+        "cursorShape": "underscore",
+        "font": {
+          "builtinGlyphs": true,
+          "cellHeight": "1.25",
+          "cellWidth": "0.6",
+          "face": "MonaspiceNe Nerd Font",
+          "features": {
+            "calt": 1,
+            "liga": 1,
+            "ss01": 1,
+            "ss02": 1,
+            "ss03": 1,
+            "ss04": 1,
+            "ss05": 1,
+            "ss06": 1,
+            "ss07": 1,
+            "ss08": 1,
+            "ss09": 1,
+            "ss10": 1
+          },
+          "size": 12,
+          "weight": "normal"
+        },
+        "guid": "{47302f9c-1ac4-566c-aa3e-8cf29889d6ab}",
+        "hidden": false,
+        "name": "Nushell",
+        "opacity": 100,
+        "padding": "0",
+        "scrollbarState": "hidden",
+        "source": "nu",
+        "useAcrylic": false
+      }
+    ]
+  },
+  "schemes": [
+    {
+      "background": "#1F1F28",
+      "black": "#1F1F28",
+      "blue": "#7EB3C9",
+      "brightBlack": "#3C3C51",
+      "brightBlue": "#7BC2DF",
+      "brightCyan": "#7BC2DF",
+      "brightGreen": "#9EC967",
+      "brightPurple": "#A98FD2",
+      "brightRed": "#EC818C",
+      "brightWhite": "#A8A48D",
+      "brightYellow": "#F1C982",
+      "cursorColor": "#E6E0C2",
+      "cyan": "#7EB3C9",
+      "foreground": "#DDD8BB",
+      "green": "#98BC6D",
+      "name": "kanagawabones",
+      "purple": "#957FB8",
+      "red": "#E46A78",
+      "selectionBackground": "#49473E",
+      "white": "#DDD8BB",
+      "yellow": "#E5C283"
+    },
+    {
+      "background": "#24283B",
+      "black": "#1D202F",
+      "blue": "#7AA2F7",
+      "brightBlack": "#414868",
+      "brightBlue": "#7AA2F7",
+      "brightCyan": "#7DCFFF",
+      "brightGreen": "#9ECE6A",
+      "brightPurple": "#BB9AF7",
+      "brightRed": "#F7768E",
+      "brightWhite": "#C0CAF5",
+      "brightYellow": "#E0AF68",
+      "cursorColor": "#C0CAF5",
+      "cyan": "#7DCFFF",
+      "foreground": "#C0CAF5",
+      "green": "#9ECE6A",
+      "name": "tokyonight-storm",
+      "purple": "#BB9AF7",
+      "red": "#F7768E",
+      "selectionBackground": "#364A82",
+      "white": "#A9B1D6",
+      "yellow": "#E0AF68"
+    }
+  ],
+  "themes": [],
+  "warning.confirmCloseAllTabs": false
 }
