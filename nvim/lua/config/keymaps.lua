@@ -1,3 +1,70 @@
--- Keymaps are automatically loaded on the VeryLazy event
--- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
--- Add any additional keymaps here
+local map = vim.keymap.set
+
+map("n", "<Esc>", "<cmd>nohlsearch<CR>", { desc = "Clear search highlight" })
+map("n", "<leader>w", "<cmd>write<CR>", { desc = "Write file" })
+map("n", "<leader>q", "<cmd>quit<CR>", { desc = "Quit window" })
+
+map("n", "<C-h>", "<C-w>h", { desc = "Go to left window" })
+map("n", "<C-j>", "<C-w>j", { desc = "Go to lower window" })
+map("n", "<C-k>", "<C-w>k", { desc = "Go to upper window" })
+map("n", "<C-l>", "<C-w>l", { desc = "Go to right window" })
+
+map({ "n", "t" }, "<M-h>", function()
+  vim.cmd("vertical resize +2")
+end, { desc = "Increase window width" })
+map({ "n", "t" }, "<M-l>", function()
+  vim.cmd("vertical resize -2")
+end, { desc = "Decrease window width" })
+map({ "n", "t" }, "<M-k>", function()
+  vim.cmd("resize +2")
+end, { desc = "Increase window height" })
+map({ "n", "t" }, "<M-j>", function()
+  vim.cmd("resize -2")
+end, { desc = "Decrease window height" })
+
+map("n", "<leader>e", "<cmd>Neotree toggle<CR>", { desc = "Toggle file tree" })
+
+map("n", "<leader>ff", function()
+  Snacks.picker.files()
+end, { desc = "Find files" })
+map("n", "<leader>fg", function()
+  Snacks.picker.grep()
+end, { desc = "Live grep" })
+map("n", "<leader>fb", function()
+  Snacks.picker.buffers()
+end, { desc = "Find buffers" })
+map("n", "<leader>fh", function()
+  Snacks.picker.help()
+end, { desc = "Find help" })
+map("n", "<leader>fd", function()
+  Snacks.picker.diagnostics()
+end, { desc = "Find diagnostics" })
+
+map("n", "<leader>tt", function()
+  Snacks.terminal.toggle()
+end, { desc = "Toggle terminal" })
+map("n", "<leader>tn", function()
+  Snacks.terminal.open()
+end, { desc = "New terminal" })
+
+map("n", "<leader>bc", function()
+  Snacks.bufdelete()
+end, { desc = "Close buffer" })
+map("n", "<leader>bn", "<cmd>bnext<CR>", { desc = "Next buffer" })
+map("n", "<leader>bp", "<cmd>bprevious<CR>", { desc = "Previous buffer" })
+map("n", "<leader>bo", function()
+  Snacks.bufdelete.other()
+end, { desc = "Close other buffers" })
+
+map("v", "<", "<gv", { desc = "Indent left" })
+map("v", ">", ">gv", { desc = "Indent right" })
+map("n", "]d", vim.diagnostic.goto_next, { desc = "Next diagnostic" })
+map("n", "[d", vim.diagnostic.goto_prev, { desc = "Previous diagnostic" })
+map("n", "<leader>cd", vim.diagnostic.open_float, { desc = "Line diagnostics" })
+
+map("n", "<leader>xx", "<cmd>Trouble diagnostics toggle<CR>", { desc = "Diagnostics" })
+map("n", "<leader>xb", "<cmd>Trouble diagnostics toggle filter.buf=0<CR>", { desc = "Buffer diagnostics" })
+map("n", "<leader>xs", "<cmd>Trouble symbols toggle focus=false<CR>", { desc = "Symbols" })
+map("n", "<leader>xl", "<cmd>Trouble lsp toggle focus=false<CR>", { desc = "LSP" })
+map("n", "<leader>xq", "<cmd>Trouble qflist toggle<CR>", { desc = "Quickfix" })
+map("n", "<leader>xL", "<cmd>Trouble loclist toggle<CR>", { desc = "Location list" })
