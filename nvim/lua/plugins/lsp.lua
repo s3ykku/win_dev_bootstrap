@@ -124,9 +124,6 @@ return {
           map("n", "gr", vim.lsp.buf.references, "Go to references")
           map("n", "<leader>cr", vim.lsp.buf.rename, "Rename symbol")
           map({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, "Code action")
-          map("n", "<leader>cf", function()
-            vim.lsp.buf.format({ async = true })
-          end, "Format buffer")
         end,
       })
     end,
