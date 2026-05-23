@@ -50,3 +50,5 @@ vim.opt.listchars = {
   trail = ".",
   nbsp = "+",
 }
+
+vim.o.exrc = true

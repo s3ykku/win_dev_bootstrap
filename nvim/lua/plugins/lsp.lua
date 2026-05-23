@@ -110,6 +110,10 @@ return {
       vim.api.nvim_create_autocmd("LspAttach", {
         group = vim.api.nvim_create_augroup("UserLspConfig", { clear = true }),
         callback = function(event)
+          if vim.bo[event.buf].filetype == "go" and vim.lsp.inlay_hint then
+            vim.lsp.inlay_hint.enable(false, { bufnr = event.buf })
+          end
+
           local map = function(mode, lhs, rhs, desc)
             vim.keymap.set(mode, lhs, rhs, {
               buffer = event.buf,
