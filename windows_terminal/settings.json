@@ -69,7 +69,7 @@
                 "font": 
                 {
                     "cellHeight": "1.25",
-                    "face": "MonaspiceNe Nerd Font",
+                    "face": "GeistMono Nerd Font",
                     "size": 12,
                     "weight": "medium"
                 },
@@ -99,7 +99,7 @@
                 "font": 
                 {
                     "cellHeight": "1.33",
-                    "face": "MonaspiceNe Nerd Font",
+                    "face": "GeistMono Nerd Font",
                     "size": 12,
                     "weight": "medium"
                 },
@@ -121,7 +121,7 @@
                     "builtinGlyphs": true,
                     "cellHeight": "1.25",
                     "cellWidth": "0.6",
-                    "face": "MonaspiceNE Nerd Font",
+                    "face": "GeistMono Nerd Font",
                     "features": 
                     {
                         "calt": 1,

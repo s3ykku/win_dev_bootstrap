@@ -81,7 +81,7 @@
   "which_key": {
     "delay_ms": 500
   },
-  "buffer_font_family": "MonaspiceNe Nerd Font",
+  "buffer_font_family": "GeistMono Nerd Font",
   "when_closing_with_no_tabs": "close_window",
   "on_last_window_closed": "quit_app",
   "session": {
