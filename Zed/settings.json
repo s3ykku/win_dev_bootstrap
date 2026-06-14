@@ -7,6 +7,11 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "languages": {
+    "Go": {
+      "format_on_save": "on"
+    }
+  },
   "use_system_window_tabs": false,
   "window_decorations": "client",
   "tabs": {
@@ -109,8 +114,17 @@
     "light": "Kanagawa Lotus",
     "dark": "Kanagawa Wave"
   },
-    "language_servers": [
-      "!eslint",
-      "..."
-    ]
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "check": {
+          "command": "clippy"
+        }
+      }
+    }
+  },
+  "language_servers": [
+    "!eslint",
+    "..."
+  ]
 }
