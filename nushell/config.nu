@@ -118,3 +118,5 @@ def --env st-block [] {
     $env.STARSHIP_CONFIG = ("~/.config/starship_blocks.toml" | path expand);
     exec nu
 }
+
+$env.config.shell_integration.osc133 = false
