@@ -1,0 +1,61 @@
+[general]
+live_config_reload = true
+
+[colors.primary]
+background = '#1f1f28'
+foreground = '#dcd7ba'
+
+[colors.normal]
+black   = '#090618'
+red     = '#c34043'
+green   = '#76946a'
+yellow  = '#c0a36e'
+blue    = '#7e9cd8'
+magenta = '#957fb8'
+cyan    = '#6a9589'
+white   = '#c8c093'
+
+[colors.bright]
+black   = '#727169'
+red     = '#e82424'
+green   = '#98bb6c'
+yellow  = '#e6c384'
+blue    = '#7fb4ca'
+magenta = '#938aa9'
+cyan    = '#7aa89f'
+white   = '#dcd7ba'
+
+[colors.selection]
+background = '#2d4f67'
+foreground = '#c8c093'
+
+[[colors.indexed_colors]]
+index = 16
+color = '#ffa066'
+
+[[colors.indexed_colors]]
+index = 17
+color = '#ff5d62'
+
+[window]
+padding = { x = 0, y = 0 }
+dynamic_padding = false
+startup_mode = 'Maximized'
+dynamic_title = false
+
+[font]
+size = 13
+builtin_box_drawing = true
+normal = { family = 'Lilex Nerd Font', style = 'Medium' }
+bold = { family = 'Lilex Nerd Font', style = 'Bold' }
+italic = { family = 'Lilex Nerd Font', style = 'Medium Italic' }
+bold_italic = { family = 'Lilex Nerd Font', style = 'Bold Italic' }
+
+[selection]
+save_to_clipboard = true
+
+[cursor]
+style = { shape = 'Underline', blinking = 'Off' }
+
+[terminal]
+shell = { program = 'C:\Users\Roman\AppData\Local\Programs\nu\bin\nu.exe', args = ['',] }
