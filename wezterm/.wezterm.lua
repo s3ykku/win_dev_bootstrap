@@ -22,6 +22,8 @@ config.font = wezterm.font {
   harfbuzz_features = { 'calt', 'liga' },
 }
 
+config.font_size = 12
+
 -- KEYS
 
 config.keys = {

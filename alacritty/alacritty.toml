@@ -44,10 +44,8 @@ startup_mode = 'Maximized'
 dynamic_title = false
 
 [font]
-size = 13.5
+size = 12
 builtin_box_drawing = true
-offset = { x = 0, y = 0 }
-glyph_offset = { x = 0, y = 1 }
 normal = { family = 'Lilex Nerd Font', style = 'Medium' }
 bold = { family = 'Lilex Nerd Font', style = 'Bold' }
 italic = { family = 'Lilex Nerd Font', style = 'Medium Italic' }
