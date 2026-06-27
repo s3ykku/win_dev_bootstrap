@@ -41,7 +41,7 @@ color = '#ff5d62'
 padding = { x = 0, y = 0 }
 dynamic_padding = false
 startup_mode = 'Maximized'
-dynamic_title = false
+dynamic_title = true
 
 [font]
 size = 12
