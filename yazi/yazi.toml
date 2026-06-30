@@ -10,16 +10,28 @@ edit = [
 	{ run = "nvim %s", block = true, desc = "Edit with Neovim", for = "unix" },
 	{ run = "nvim %s", block = true, desc = "Edit with Neovim", for = "windows" },
 ]
+vscode = [
+	{ run = "code %s1", orphan = true, desc = "Open in VS Code", for = "windows" },
+]
+zed = [
+	{ run = "zed %s1", orphan = true, desc = "Open in Zed", for = "windows" },
+]
 play = [
-	{ run = "mpv %s", orphan = true, desc = "Play with mpv", for = "unix" },
-	{ run = "mpv %s", orphan = true, desc = "Play with mpv", for = "windows" },
+	{ run = 'mpv "$@"', orphan = true, desc = "Play with mpv", for = "unix" },
+	{ run = "mpv %*", orphan = true, desc = "Play with mpv", for = "windows" },
 ]
 
 [open]
 prepend_rules = [
-	{ mime = "text/*", use = "edit" },
-	{ mime = "application/{json,ndjson,toml,yaml,xml,javascript,wine-extension-ini}", use = "edit" },
-	{ mime = "video/*", use = "play" },
+	{ url = "*.bat", use = [ "edit", "open", "vscode", "zed" ] },
+	{ url = "*.cmd", use = [ "edit", "open", "vscode", "zed" ] },
+	{ mime = "text/*", use = [ "edit", "vscode", "zed" ] },
+	{ mime = "application/{json,ndjson,toml,yaml,xml,javascript,wine-extension-ini}", use = [ "edit", "vscode", "zed" ] },
+	{ mime = "video/*", use = [ "play", "vscode", "zed" ] },
+]
+append_rules = [
+	{ url = "*/", use = [ "open", "vscode", "zed" ] },
+	{ url = "*", use = [ "open", "vscode", "zed" ] },
 ]
 
 [plugin]

@@ -1,4 +1,6 @@
 [mgr]
 prepend_keymap = [
+    { on = "O", run = "open --interactive --hovered", desc = "Открыть под курсором интерактивно" },
+    { on = "<S-Enter>", run = "open --interactive --hovered", desc = "Открыть под курсором интерактивно" },
     { on = [ "c", "a" ], run = "plugin compress", desc = "Запаковать выделенные файлы" },
 ]
