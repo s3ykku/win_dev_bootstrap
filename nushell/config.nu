@@ -113,6 +113,17 @@ def --env st-def [] {
     exec nu
 }
 
+# Обертка над yazi для сохранения CWD при выходе
+def --env y [...args] {
+    let tmp = (mktemp -t "yazi-cwd.XXXXXX")
+    ^yazi ...$args --cwd-file $tmp
+    let cwd = (open $tmp)
+    if $cwd != $env.PWD and ($cwd | path exists) {
+        cd $cwd
+    }
+    rm -fp $tmp
+}
+
 # Блочно-квадратный конфиг Starship
 def --env st-block [] {
     $env.STARSHIP_CONFIG = ("~/.config/starship_blocks.toml" | path expand);

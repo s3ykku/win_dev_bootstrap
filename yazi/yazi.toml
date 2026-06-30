@@ -27,3 +27,13 @@ prepend_previewers = [
 	{ mime = "text/*", run = "code" },
 	{ mime = "application/{json,ndjson,toml,yaml,xml,javascript,wine-extension-ini}", run = "code" },
 ]
+
+[[plugin.prepend_fetchers]]
+url   = "*"
+run   = "git"
+group = "git"
+
+[[plugin.prepend_fetchers]]
+url   = "*/"
+run   = "git"
+group = "git"
