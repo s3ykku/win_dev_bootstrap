@@ -58,4 +58,4 @@ save_to_clipboard = true
 style = { shape = 'Underline', blinking = 'Off' }
 
 [terminal]
-shell = { program = 'C:\Users\Roman\AppData\Local\Programs\nu\bin\nu.exe', args = ['',] }
+shell = { program = 'C:\Program Files\PowerShell\7\pwsh.exe', args = ['',] }
