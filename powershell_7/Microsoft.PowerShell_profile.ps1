@@ -7,9 +7,9 @@ Set-Location $HOME
 
 Set-Alias ll Get-ChildItem
 Set-Alias c clear
-function ga { git add . }
-function gc { git commit }
-function gp { git push }
+function gta { git add . }
+function gtc { git commit @args }
+function gtp { git push }
 function v { nvim @args }
 
 function y {
