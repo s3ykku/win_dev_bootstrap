@@ -3,7 +3,7 @@ $env:STARSHIP_CONFIG = "$HOME\.config\starship_kanagawa.toml"
 Invoke-Expression (&starship init powershell)
 $PSStyle.FileInfo.Directory = "`e[36;1m"
 
-Set-Location $HOME
+# Set-Location $HOME
 
 Set-Alias ll Get-ChildItem
 Set-Alias c clear
