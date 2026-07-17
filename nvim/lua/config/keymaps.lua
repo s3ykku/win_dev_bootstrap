@@ -56,6 +56,10 @@ map("n", "<leader>bo", function()
   Snacks.bufdelete.other()
 end, { desc = "Close other buffers" })
 
+for i = 1, 9 do
+  map("n", "<leader>" .. i, "<cmd>BufferLineGoToBuffer " .. i .. "<CR>", { desc = "Go to buffer " .. i })
+end
+
 map("v", "<", "<gv", { desc = "Indent left" })
 map("v", ">", ">gv", { desc = "Indent right" })
 map("n", "]d", vim.diagnostic.goto_next, { desc = "Next diagnostic" })
