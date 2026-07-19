@@ -7,6 +7,16 @@ local servers = {
       },
     },
   },
+  biome = {
+    filetypes = {
+      "javascript",
+      "javascriptreact",
+      "typescript",
+      "typescriptreact",
+      "html",
+      "css",
+    },
+  },
   gopls = {
     settings = {
       gopls = {
@@ -20,8 +30,18 @@ local servers = {
     },
   },
   pyright = {},
-  html = {},
-  cssls = {},
+  html = {
+    settings = {
+      html = { validate = false },
+    },
+  },
+  cssls = {
+    settings = {
+      css = { validate = false },
+      scss = { validate = false },
+      less = { validate = false },
+    },
+  },
   emmet_language_server = {
     filetypes = {
       "html",
@@ -110,8 +130,8 @@ return {
       vim.api.nvim_create_autocmd("LspAttach", {
         group = vim.api.nvim_create_augroup("UserLspConfig", { clear = true }),
         callback = function(event)
-          if vim.lsp.inlay_hint then
-            vim.lsp.inlay_hint.enable(vim.bo[event.buf].filetype == "rust", { bufnr = event.buf })
+          if vim.bo[event.buf].filetype == "go" and vim.lsp.inlay_hint then
+            vim.lsp.inlay_hint.enable(false, { bufnr = event.buf })
           end
 
           local map = function(mode, lhs, rhs, desc)

@@ -6,7 +6,7 @@ return {
     lazy = false,
     keys = {
       {
-        "<leader>cf",
+        "<leader>fd",
         function()
           require("conform").format({ async = true, lsp_format = "fallback" })
         end,
@@ -14,25 +14,46 @@ return {
       },
     },
     opts = {
+      formatters = {
+        biome = {
+          -- Biome disables its HTML formatter by default. Keep both web
+          -- formatters enabled when Conform runs Biome through stdin.
+          append_args = {
+            "--html-formatter-enabled=true",
+            "--css-formatter-enabled=true",
+          },
+        },
+      },
       formatters_by_ft = {
         lua = { "stylua" },
         rust = { "rustfmt" },
         go = { "goimports", "gofumpt" },
         python = { "isort", "black" },
-        javascript = { "prettierd", "prettier", stop_after_first = true },
-        typescript = { "prettierd", "prettier", stop_after_first = true },
-        javascriptreact = { "prettierd", "prettier", stop_after_first = true },
-        typescriptreact = { "prettierd", "prettier", stop_after_first = true },
-        html = { "prettierd", "prettier", stop_after_first = true },
-        css = { "prettierd", "prettier", stop_after_first = true },
+        javascript = { "biome" },
+        typescript = { "biome" },
+        javascriptreact = { "biome" },
+        typescriptreact = { "biome" },
+        html = { "biome" },
+        css = { "biome" },
         json = { "prettierd", "prettier", stop_after_first = true },
         yaml = { "prettierd", "prettier", stop_after_first = true },
         markdown = { "prettierd", "prettier", stop_after_first = true },
       },
-      format_on_save = {
-        timeout_ms = 500,
-        lsp_format = "fallback",
-      },
+      format_on_save = function(bufnr)
+        local filetype = vim.bo[bufnr].filetype
+        local biome_filetypes = {
+          html = true,
+          css = true,
+          javascript = true,
+        }
+
+        if biome_filetypes[filetype] then
+          return {
+            timeout_ms = 500,
+            lsp_format = "fallback",
+          }
+        end
+      end,
     },
   },
 }
