@@ -7,16 +7,6 @@ local servers = {
       },
     },
   },
-  biome = {
-    filetypes = {
-      "javascript",
-      "javascriptreact",
-      "typescript",
-      "typescriptreact",
-      "html",
-      "css",
-    },
-  },
   gopls = {
     settings = {
       gopls = {
@@ -30,18 +20,9 @@ local servers = {
     },
   },
   pyright = {},
-  html = {
-    settings = {
-      html = { validate = false },
-    },
-  },
-  cssls = {
-    settings = {
-      css = { validate = false },
-      scss = { validate = false },
-      less = { validate = false },
-    },
-  },
+  html = {},
+  cssls = {},
+  ts_ls = {},
   emmet_language_server = {
     filetypes = {
       "html",
