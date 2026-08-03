@@ -27,7 +27,7 @@ require("lazy").setup({
     { import = "plugins" },
   },
   install = {
-    colorscheme = { "kanagawa-wave", "habamax" },
+    colorscheme = { "tokyonight-storm", "habamax" },
   },
   checker = {
     enabled = true,

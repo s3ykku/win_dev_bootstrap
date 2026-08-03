@@ -2,16 +2,27 @@ return {
   {
     "rebelot/kanagawa.nvim",
     name = "kanagawa",
+    opts = {
+      overrides = function(colors)
+        return {
+          SnacksDashboardHeader = { fg = colors.palette.springGreen },
+        }
+      end,
+    },
+  },
+  {
+    "folke/tokyonight.nvim",
+    name = "tokyonight",
+    lazy = false,
     priority = 1000,
     config = function()
-      require("kanagawa").setup({
-        overrides = function(colors)
-          return {
-            SnacksDashboardHeader = { fg = colors.palette.springGreen },
-          }
+      require("tokyonight").setup({
+        style = "night",
+        on_highlights = function(highlights, colors)
+          highlights.SnacksDashboardHeader = { fg = colors.blue }
         end,
       })
-      vim.cmd.colorscheme("kanagawa-wave")
+      vim.cmd.colorscheme("tokyonight-storm")
     end,
   },
 }

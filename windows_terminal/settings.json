@@ -121,7 +121,7 @@
                 "source": "Windows.Terminal.VisualStudio"
             },
             {
-                "colorScheme": "kanagawabones",
+                "colorScheme": "tokyonight-storm",
                 "cursorHeight": 12,
                 "cursorShape": "underscore",
                 "font": 
@@ -167,6 +167,29 @@
             "selectionBackground": "#49473E",
             "white": "#DDD8BB",
             "yellow": "#E5C283"
+        },
+        {
+            "background": "#24283B",
+            "black": "#1D202F",
+            "blue": "#7AA2F7",
+            "brightBlack": "#414868",
+            "brightBlue": "#7AA2F7",
+            "brightCyan": "#7DCFFF",
+            "brightGreen": "#9ECE6A",
+            "brightPurple": "#BB9AF7",
+            "brightRed": "#F7768E",
+            "brightWhite": "#C0CAF5",
+            "brightYellow": "#E0AF68",
+            "cursorColor": "#C0CAF5",
+            "cyan": "#7DCFFF",
+            "foreground": "#C0CAF5",
+            "green": "#9ECE6A",
+            "name": "tokyonight-storm",
+            "purple": "#BB9AF7",
+            "red": "#F7768E",
+            "selectionBackground": "#364A82",
+            "white": "#A9B1D6",
+            "yellow": "#E0AF68"
         }
     ],
     "showTabsFullscreen": true,
