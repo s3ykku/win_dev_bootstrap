@@ -22,7 +22,7 @@ return {
           highlights.SnacksDashboardHeader = { fg = colors.blue }
         end,
       })
-      vim.cmd.colorscheme("tokyonight-storm")
+      vim.cmd.colorscheme("kanagawa-wave")
     end,
   },
 }

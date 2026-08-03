@@ -1,6 +1,6 @@
 [general]
 live_config_reload = true
-import = ['./tokyo-night-storm.toml']
+import = ['./kanagawa_wave.toml']
 working_directory = 'C:\Users\Roman\'
 
 [window]
