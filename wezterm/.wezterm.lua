@@ -6,7 +6,7 @@ local mux = wezterm.mux
 
 config.front_end = 'WebGpu'
 config.color_scheme = 'kanagawabones'
-config.default_prog = { 'C:\\Users\\Vika\\AppData\\Local\\Programs\\nu\\bin\\nu.exe', '' }
+config.default_prog = { 'C:\\Users\\Roman\\AppData\\Local\\Programs\\nu\\bin\\nu.exe', '' }
 -- config.default_prog = { 'C:\\Program Files\\PowerShell\\7\\pwsh.exe' }
 wezterm.on('gui-startup', function(cmd)
   local tab, pane, window = mux.spawn_window(cmd or {})
@@ -23,7 +23,7 @@ config.font = wezterm.font {
   harfbuzz_features = { 'calt', 'liga' },
 }
 
-config.font_size = 11
+config.font_size = 12
 
 -- KEYS
 

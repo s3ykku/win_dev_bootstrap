@@ -10,7 +10,7 @@ startup_mode = 'Maximized'
 dynamic_title = false
 
 [font]
-size = 12
+size = 13
 builtin_box_drawing = true
 normal = { family = 'Lilex Nerd Font', style = 'Medium' }
 bold = { family = 'Lilex Nerd Font', style = 'Bold' }
