@@ -23,8 +23,7 @@ alias ll = ls -l
 alias v = nvim
 alias c = clear
 
-# Переключатель темы Nushell: false = Tokyo Night, true = Kanagawa.
-let use_kanagawa_theme = true
+# Активная тема Nushell.
 
 let theme_tokyo_night = {
     # Базовые элементы
@@ -82,7 +81,35 @@ let theme_kanagawa = {
     shape_garbage: { fg: "#e82424" attr: b }
 }
 
-let active_color_config = if $use_kanagawa_theme { $theme_kanagawa } else { $theme_tokyo_night }
+let theme_gruvbox_dark = {
+    # Базовые элементы
+    separator: "#928374"
+    leading_trailing_space_bg: { attr: n }
+    header: { fg: "#83a598" attr: b }
+    empty: "#a89984"
+    bool: "#d79921"
+    int: "#d79921"
+    filesize: "#8ec07c"
+    duration: "#b8bb26"
+    date: "#d3869b"
+    string: "#b8bb26"
+    row_index: "#928374"
+    hints: "#928374"
+
+    # Подсветка синтаксиса (Shapes)
+    shape_external: "#83a598"
+    shape_internalcall: "#83a598"
+    shape_externalarg: "#ebdbb2"
+    shape_flag: { fg: "#d3869b" attr: b }
+    shape_string: "#b8bb26"
+    shape_variable: "#d3869b"
+    shape_operator: "#8ec07c"
+    shape_filepath: "#8ec07c"
+    shape_list: "#fabd2f"
+    shape_garbage: { fg: "#fb4934" attr: b }
+}
+
+let active_color_config = $theme_gruvbox_dark
 
 $env.config = {
     show_banner: false

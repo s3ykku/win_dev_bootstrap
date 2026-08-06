@@ -22,7 +22,12 @@ return {
           highlights.SnacksDashboardHeader = { fg = colors.blue }
         end,
       })
-      vim.cmd.colorscheme("kanagawa-wave")
+      vim.opt.background = "dark"
+      vim.cmd.colorscheme("gruvbox")
     end,
+  },
+  {
+    "morhetz/gruvbox",
+    name = "gruvbox",
   },
 }

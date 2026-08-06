@@ -1,0 +1,67 @@
+format = """ [╭](fg:#83A598)$os\
+$time\
+$directory\
+$golang\
+$rust\
+$python\
+$fill\
+$git_branch\
+$git_status
+ [╰╴⮞](fg:#83A598) """
+
+add_newline = true
+
+[fill]
+symbol = ' '
+
+[os]
+disabled = false
+format = "[ $symbol ](fg:#83A598)"
+
+[os.symbols]
+Windows = ""
+Arch = "󰣇"
+NixOS = "󱄅"
+
+[time]
+disabled = false
+format = "[  $time ](fg:#D3869B)"
+
+[directory]
+disabled = false
+format = "[  $path ](fg:#B8BB26)"
+truncation_length = 1
+fish_style_pwd_dir_length = 50
+
+[golang]
+disabled = false
+format = "[  $version ](fg:#FE8019)"
+
+[rust]
+disabled = false
+format = "[  $version ](fg:#FE8019)"
+
+[python]
+disabled = false
+detect_extensions = []
+detect_files = []
+detect_folders = []
+format = "[  venv: $version ](fg:#FE8019)"
+
+[git_branch]
+disabled = false
+format = "[  $branch ](fg:#8EC07C)"
+
+[git_status]
+disabled = false
+format = "$all_status$ahead_behind"
+untracked = "[  ~$count ](fg:#FABD2F)"
+renamed = "[  ~$count ](fg:#FABD2F)"
+modified = "[  ~$count ](fg:#FABD2F)"
+deleted = "[ 󰅖 ~$count ](fg:#FB4934)"
+staged = "[  ~$count ](fg:#B8BB26)"
+ahead = "[  ](fg:#A89984)"
+behind = "[  ](fg:#A89984)"
+diverged = "[  ](fg:#D3869B)"
+up_to_date = "[ 󰄬 ](fg:#B8BB26)"
+conflicted = "[ 󱒒 ](fg:#FB4934)"
