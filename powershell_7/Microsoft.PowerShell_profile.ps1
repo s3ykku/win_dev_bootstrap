@@ -1,4 +1,4 @@
-$env:STARSHIP_CONFIG = "$HOME\.config\starship_kanagawa.toml"
+$env:STARSHIP_CONFIG = "$HOME\.config\starship_gruvbox_dark.toml"
 
 Invoke-Expression (&starship init powershell)
 $PSStyle.FileInfo.Directory = "`e[36;1m"
