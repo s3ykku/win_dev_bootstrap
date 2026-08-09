@@ -156,6 +156,52 @@
       },
       "dev": false
     },
+    "nu": {
+      "manifest": {
+        "id": "nu",
+        "name": "Nu",
+        "version": "0.0.10",
+        "schema_version": 1,
+        "description": "Nushell language support for Zed",
+        "repository": "https://github.com/zed-extensions/nu",
+        "authors": [
+          "Mikayla Maki <mikayla@zed.dev>",
+          "Joseph Lyons <joseph@zed.dev>",
+          "Darren Schroeder"
+        ],
+        "lib": {
+          "kind": "Rust",
+          "version": "0.7.0"
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/nu"
+        ],
+        "grammars": {
+          "nu": {
+            "repository": "https://github.com/nushell/tree-sitter-nu",
+            "rev": "47d4b4f5369c0cae866724758ae88ef07e10e4f1",
+            "path": null
+          }
+        },
+        "language_servers": {
+          "nu": {
+            "language": null,
+            "languages": [
+              "Nu"
+            ],
+            "language_ids": {},
+            "code_action_kinds": null
+          }
+        },
+        "context_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
     "powershell": {
       "manifest": {
         "id": "powershell",
@@ -444,6 +490,20 @@
       },
       "hidden": false,
       "grammar": "lua"
+    },
+    "Nu": {
+      "extension": "nu",
+      "path": "languages/nu",
+      "matcher": {
+        "path_suffixes": [
+          "nu",
+          "nuon"
+        ],
+        "first_line_pattern": "^#!.*\\b(?:nu)\\b",
+        "modeline_aliases": []
+      },
+      "hidden": false,
+      "grammar": "nu"
     },
     "PowerShell": {
       "extension": "powershell",

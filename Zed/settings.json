@@ -109,9 +109,12 @@
   "theme": {
     "mode": "dark",
     "light": "Kanagawa Lotus",
-    "dark": "Kanagawa Wave",
+    "dark": "Gruvbox Material",
   },
   "languages": {
+    "Lua": {
+      "tab_size": 2,
+    },
     "Go": {
       "tab_size": 4,
     },

@@ -17,5 +17,5 @@
 # You can remove these comments if you want or leave
 # them for future reference.
 
-$env.STARSHIP_CONFIG = ("~/.config/starship_kanagawa.toml" | path expand)
+$env.STARSHIP_CONFIG = ("~/.config/starship_gruvbox_dark.toml" | path expand)
 $env.EDITOR = "nvim"

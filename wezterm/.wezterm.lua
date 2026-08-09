@@ -5,7 +5,7 @@ local mux = wezterm.mux
 -- BASE SETTINGS
 
 config.front_end = 'WebGpu'
-config.color_scheme = 'kanagawabones'
+config.color_scheme = 'gruvbox-dark'
 config.default_prog = { 'C:\\Users\\Roman\\AppData\\Local\\Programs\\nu\\bin\\nu.exe', '' }
 -- config.default_prog = { 'C:\\Program Files\\PowerShell\\7\\pwsh.exe' }
 wezterm.on('gui-startup', function(cmd)

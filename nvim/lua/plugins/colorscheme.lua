@@ -23,7 +23,7 @@ return {
         end,
       })
       vim.opt.background = "dark"
-     vim.cmd.colorscheme("kanagawa-wave")
+      vim.cmd.colorscheme("gruvbox")
     end,
   },
   {
