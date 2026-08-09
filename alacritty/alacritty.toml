@@ -1,6 +1,6 @@
 [general]
 live_config_reload = true
-import = ['./gruvbox_dark.toml']
+import = ['./kanagawa_wave.toml']
 
 [window]
 padding = { x = 0, y = 0 }

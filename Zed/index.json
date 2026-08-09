@@ -253,6 +253,35 @@
       },
       "dev": false
     },
+    "tokyo-night": {
+      "manifest": {
+        "id": "tokyo-night",
+        "name": "Tokyo Night Themes",
+        "version": "0.8.0",
+        "schema_version": 1,
+        "description": "Tokyo Night Themes",
+        "repository": "https://github.com/ssaunderss/zed-tokyo-night",
+        "authors": [
+          "ssaunderss <austinsaunders@me.com>"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [
+          "themes/tokyo-night.json"
+        ],
+        "icon_themes": [],
+        "languages": [],
+        "grammars": {},
+        "language_servers": {},
+        "context_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
     "toml": {
       "manifest": {
         "id": "toml",
@@ -357,6 +386,22 @@
     "Kanagawa Wave - No Italics": {
       "extension": "kanagawa-themes",
       "path": "themes/Kanagawa-no-italics.json"
+    },
+    "Tokyo Night": {
+      "extension": "tokyo-night",
+      "path": "themes/tokyo-night.json"
+    },
+    "Tokyo Night Light": {
+      "extension": "tokyo-night",
+      "path": "themes/tokyo-night.json"
+    },
+    "Tokyo Night Moon": {
+      "extension": "tokyo-night",
+      "path": "themes/tokyo-night.json"
+    },
+    "Tokyo Night Storm": {
+      "extension": "tokyo-night",
+      "path": "themes/tokyo-night.json"
     }
   },
   "icon_themes": {},
