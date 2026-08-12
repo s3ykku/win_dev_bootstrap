@@ -109,7 +109,7 @@ let theme_gruvbox_dark = {
     shape_garbage: { fg: "#fb4934" attr: b }
 }
 
-let active_color_config = $theme_tokyo_night
+let active_color_config = $theme_kanagawa
 
 $env.config = {
     show_banner: false
