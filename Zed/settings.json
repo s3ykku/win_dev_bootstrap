@@ -7,11 +7,12 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "line_ending": "detect",
   "cli_default_open_behavior": "existing_window",
   "use_system_window_tabs": false,
   "window_decorations": "client",
   "tabs": {
-    "git_status": false,
+    "git_status": false
   },
   "ensure_final_newline_on_save": false,
   "remove_trailing_whitespace_on_save": false,
@@ -22,86 +23,89 @@
     "ollama": {
       "prompt_format": "infer",
       "max_output_tokens": 256,
-      "model": "qwen2.5-coder:3b-instruct-q4_K_M",
+      "model": "qwen2.5-coder:3b-instruct-q4_K_M"
     },
-    "provider": "ollama",
+    "provider": "ollama"
   },
   "diagnostics": {
     "inline": {
-      "enabled": true,
-    },
+      "enabled": true
+    }
   },
   "inline_code_actions": true,
   "inlay_hints": {
     "show_value_hints": true,
     "show_background": false,
-    "enabled": false,
+    "enabled": false
   },
   "buffer_font_weight": 500.0,
   "terminal": {
     "copy_on_select": true,
     "cursor_shape": "underline",
     "shell": {
-      "program": "nu.exe",
-    },
+      "program": "nu.exe"
+    }
   },
   "agent": {
     "button": true,
     "dock": "right",
     "flexible": false,
     "max_content_width": 2000.0,
-    "default_width": 500.0,
+    "default_width": 400.0,
     "favorite_models": [],
-    "model_parameters": [],
+    "model_parameters": []
   },
   "vim_mode": false,
   "git_panel": {
-    "default_width": 500.0,
-    "dock": "left",
+    "default_width": 400.0,
+    "dock": "left"
   },
   "project_panel": {
-    "default_width": 500.0,
-    "dock": "left",
+    "default_width": 400.0,
+    "dock": "left"
   },
   "colorize_brackets": true,
   "format_on_save": "on",
   "vim": {
-    "toggle_relative_line_numbers": true,
+    "toggle_relative_line_numbers": true
   },
   "toolbar": {
     "agent_review": true,
     "breadcrumbs": true,
     "quick_actions": true,
     "selections_menu": true,
-    "code_actions": true,
+    "code_actions": true
   },
   "minimap": {
     "max_width_columns": 140,
-    "show": "never",
+    "show": "never"
   },
   "relative_line_numbers": "disabled",
   "which_key": {
-    "delay_ms": 500,
+    "delay_ms": 500
   },
   "buffer_font_family": "Lilex Nerd Font",
   "buffer_font_features": {
     "calt": true,
-    "liga": true,
+    "liga": true
   },
   "when_closing_with_no_tabs": "close_window",
   "on_last_window_closed": "quit_app",
   "session": {
-    "trust_all_worktrees": true,
+    "trust_all_worktrees": true
   },
   "agent_servers": {
-    "codex-acp": {
-      "type": "registry",
+    "claude-acp": {
+      "type": "registry"
     },
+    "codex-acp": {
+      "type": "registry"
+    }
   },
   "icon_theme": {
     "mode": "dark",
     "light": "Zed (Default)",
-    "dark": "Zed (Default)",
+    "dark": "Zed (Default)"
   },
   "base_keymap": "VSCode",
   "ui_font_size": 16,
@@ -109,20 +113,20 @@
   "theme": {
     "mode": "dark",
     "light": "Kanagawa Lotus",
-    "dark": "Tokyo Night Storm",
+    "dark": "Tokyo Night Storm"
   },
   "languages": {
     "Lua": {
-      "tab_size": 2,
+      "tab_size": 2
     },
     "Go": {
-      "tab_size": 4,
+      "tab_size": 4
     },
     "Rust": {
       "tab_size": 4,
       "inlay_hints": {
-        "enabled": true,
-      },
+        "enabled": true
+      }
     },
     "JavaScript": {
       "tab_size": 4,
@@ -130,18 +134,18 @@
         "typescript-language-server",
         "!vtsls",
         "!eslint",
-        "...",
-      ],
-    },
+        "..."
+      ]
+    }
   },
   "lsp": {
     "rust-analyzer": {
       "initialization_options": {
         "check": {
-          "command": "clippy",
-        },
-      },
-    },
+          "command": "clippy"
+        }
+      }
+    }
   },
-  "language_servers": ["!eslint", "..."],
+  "language_servers": ["!eslint", "..."]
 }
