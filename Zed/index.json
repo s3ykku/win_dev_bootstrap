@@ -202,6 +202,41 @@
       },
       "dev": false
     },
+    "pascal": {
+      "manifest": {
+        "id": "pascal",
+        "name": "Pascal",
+        "version": "0.1.0",
+        "schema_version": 1,
+        "description": "Pascal language support.",
+        "repository": "https://github.com/ChemisTechlabs/zed-pascal",
+        "authors": [
+          "Guilherme Caldas <gcaldas@chemis.tech>"
+        ],
+        "lib": {
+          "kind": null,
+          "version": null
+        },
+        "themes": [],
+        "icon_themes": [],
+        "languages": [
+          "languages/pascal"
+        ],
+        "grammars": {
+          "pascal": {
+            "repository": "https://github.com/ChemisTechlabs/tree-sitter-pascal",
+            "rev": "489e273895a452a79dc74749ed99793d20ee85c1",
+            "path": null
+          }
+        },
+        "language_servers": {},
+        "context_servers": {},
+        "slash_commands": {},
+        "snippets": null,
+        "capabilities": []
+      },
+      "dev": false
+    },
     "powershell": {
       "manifest": {
         "id": "powershell",
@@ -504,6 +539,24 @@
       },
       "hidden": false,
       "grammar": "nu"
+    },
+    "Pascal": {
+      "extension": "pascal",
+      "path": "languages/pascal",
+      "matcher": {
+        "path_suffixes": [
+          "pas",
+          "pp",
+          "lpr",
+          "dpr",
+          "inc",
+          "p"
+        ],
+        "first_line_pattern": null,
+        "modeline_aliases": []
+      },
+      "hidden": false,
+      "grammar": "pascal"
     },
     "PowerShell": {
       "extension": "powershell",
